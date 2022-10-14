@@ -33,6 +33,6 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/ci-mitu:$(date +%s)
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/ci-mitu:${{ steps.meta.outputs.tags }}
           cache-from: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/ci-mitu:buildcache
           cache-to: type=registry,ref=${{ secrets.DOCKER_HUB_USERNAME }}/ci-mitu:buildcache,mode=max
