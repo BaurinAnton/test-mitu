@@ -28,8 +28,16 @@
       "via": "document_category",
       "collection": "document-subcategories"
     },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "uid"
+    },
     "numeric_order": {
-      "via": "document_category",
+      "via": "document_categories",
       "model": "numeric-order"
     }
   }

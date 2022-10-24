@@ -62,9 +62,17 @@
         }
       }
     },
+    "itemProp": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
     "numeric_order": {
-      "model": "numeric-order",
-      "via": "document"
+      "via": "documents",
+      "model": "numeric-order"
     }
   }
 }

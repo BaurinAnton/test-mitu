@@ -24,9 +24,9 @@
         }
       }
     },
-    "document_category": {
-      "via": "numeric_order",
-      "model": "document-categories"
+    "document_categories": {
+      "collection": "document-categories",
+      "via": "numeric_order"
     },
     "title": {
       "type": "string",
@@ -36,13 +36,13 @@
         }
       }
     },
-    "document_subcategory": {
-      "via": "numeric_order",
-      "model": "document-subcategories"
+    "document_subcategories": {
+      "collection": "document-subcategories",
+      "via": "numeric_order"
     },
-    "document": {
-      "via": "numeric_order",
-      "model": "document"
+    "documents": {
+      "collection": "document",
+      "via": "numeric_order"
     }
   }
 }
